@@ -1,0 +1,19 @@
+  make
+	rm -f "result.txt"
+# for i in {2..2}; do
+# for i in {1,3,5}; do
+for i in {1,3,4,5,6,7,8,9,10}; do
+   echo $i "..."
+  echo "################################ " >> "result.txt"
+  echo "##             " $i"             ## " >> "result.txt"
+  echo "################################ " >> "result.txt"
+  ./taskMgr -F "dofiles/do"$i &> "result_my.txt"
+  ./ref/taskMgr-mac -F "dofiles/do"$i &> "result_ric.txt"
+  diff "result_my.txt" "result_ric.txt" >> "result.txt"
+  echo "################################ " >> "result.txt"
+  echo "##           " $i" end           ## " >> "result.txt"
+  echo "################################ " >> "result.txt"
+  echo "" >> "result.txt"
+done
+#  rm -f "result_my.txt" "result_ric.txt"
+  vim "result.txt"

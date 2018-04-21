@@ -1,0 +1,38 @@
+taski 20
+taskn -n a 1
+taskn -n b 5
+taskn -n c 2
+taskn -n d 101
+taskn -n e 102
+taskn -n f 3
+taskn -n g 4
+taskn -n h 103
+taskn -n i 104
+taskn -n j 105
+taskn -n k 106
+taskn -n l 6
+taskn -n m 7
+taskn -n n 8
+taskn -n o 9
+taskq -min
+taskq -he
+taskq -ha
+taskr -n i
+taskq -ha
+taskq -he
+taskr -n a
+taskq -ha
+taskq -he
+taskr -n d
+taskq -ha
+taskq -he
+taskn -n p 1
+taska 1000
+taskq -ha
+taska -r 10 50
+taskq -ha
+taskq -he
+taskr -r 3
+taskq -ha
+usage
+q -f

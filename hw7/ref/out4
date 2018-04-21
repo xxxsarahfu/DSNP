@@ -1,0 +1,127 @@
+task> taski 20
+Task manager is initialized (20)
+
+task> taskn -n a 1
+Task node inserted: (a, 1)
+
+task> taskn -n b 5
+Task node inserted: (b, 5)
+
+task> taskn -n c 2
+Task node inserted: (c, 2)
+
+task> taskn -n d 101
+Task node inserted: (d, 101)
+
+task> taskn -n e 102
+Task node inserted: (e, 102)
+
+task> taskn -n f 3
+Task node inserted: (f, 3)
+
+task> taskn -n g 4
+Task node inserted: (g, 4)
+
+task> taskn -n h 103
+Task node inserted: (h, 103)
+
+task> taskn -n i 104
+Task node inserted: (i, 104)
+
+task> taskn -n j 105
+Task node inserted: (j, 105)
+
+task> taskn -n k 106
+Task node inserted: (k, 106)
+
+task> taskn -n l 6
+Task node inserted: (l, 6)
+
+task> taskn -n m 7
+Task node inserted: (m, 7)
+
+task> taskn -n n 8
+Task node inserted: (n, 8)
+
+task> taskn -n o 9
+Task node inserted: (o, 9)
+
+task> taskq -min
+Min task node: (a, 1)
+
+task> taskq -he
+(a, 1)
+(b, 5)
+(c, 2)
+(d, 101)
+(e, 102)
+(f, 3)
+(g, 4)
+(h, 103)
+(i, 104)
+(j, 105)
+(k, 106)
+(l, 6)
+(m, 7)
+(n, 8)
+(o, 9)
+Number of tasks: 15
+
+task> taskq -ha
+(a, 1)
+(b, 5)
+(c, 2)
+(d, 101)
+(e, 102)
+(f, 3)
+(g, 4)
+(h, 103)
+(i, 104)
+(j, 105)
+(k, 106)
+(l, 6)
+(m, 7)
+(n, 8)
+(o, 9)
+Number of tasks: 15
+
+task> taskr -n i
+Task node removed: (i, 104)
+
+task> taskr -n a
+Task node removed: (a, 1)
+
+task> taskr -n d
+Task node removed: (d, 101)
+
+task> taskn -n p 1
+Task node inserted: (p, 1)
+
+task> taska 1000
+Task assignment succeeds...
+Updating min: (c, 2)
+
+task> taska -r 10 50
+Task assignment succeeds...
+Updating min: (f, 3)
+Task assignment succeeds...
+Updating min: (g, 4)
+Task assignment succeeds...
+Updating min: (b, 5)
+Task assignment succeeds...
+Updating min: (l, 6)
+Task assignment succeeds...
+Updating min: (m, 7)
+Task assignment succeeds...
+Updating min: (n, 8)
+Task assignment succeeds...
+Updating min: (o, 9)
+Task assignment succeeds...
+Updating min: (c, 52)
+Task assignment succeeds...
+Updating min: (f, 53)
+Task assignment succeeds...
+Updating min: (g, 54)
+
+task> q -f
+
