@@ -94,7 +94,7 @@ CirGate::myFanout(CirGate* travGate, unsigned level, unsigned levelCount, bool i
 {
 	assert (level >= 0);
 	assert( levelCount <= level);
-	cout << "fanout = " << travGate -> fanout.size() << " " << travGate->fanout[0]->gateid << endl;
+	//cout << "fanout = " << travGate -> fanout.size() << " " << travGate->fanout[0]->gateid << endl;
 	for (size_t i = 0; i < levelCount; i++) { cout << "  ";}
 	if (inv_or_not == false) cout << "!";
 	cout << travGate -> getTypeStr() << " " << travGate -> getID();
